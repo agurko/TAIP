@@ -65,4 +65,21 @@ class HighArray {
             System.out.print(a[j] + " "); // Вывод
         System.out.println();
     }
+    //------- Удаление дубликатов -------------------------
+    public void noDups() {
+        for (int j = 0; j < nElems; j++)
+            for (int k = j + 1; k < nElems; k++)
+                if (a[j] == a[k]) {
+                    a[k] = -1;
+                }
+        for (int j = 0; j < nElems; j++)
+            if (a[j] == -1) {
+                for (int k = j; k < nElems; k++)
+                    a[k] = a[k + 1];
+                nElems--;
+            }
+    }
+
+
+
 } // Конец класса January.HighArray.HighArray

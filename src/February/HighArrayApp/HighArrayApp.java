@@ -2,6 +2,7 @@ package February.HighArrayApp;
 
 class HighArrayApp {
     public static void main(String[] args) {
+        // Лекция 2 Задания 1, 2, 3, 6
         int maxSize = 100;	// Размер массива
         HighArray arr;	// Ссылка на массив
         arr = new HighArray(maxSize); // Создание массива
@@ -20,9 +21,8 @@ class HighArrayApp {
         arr.delete(0); arr.delete(55); arr.delete(99);	// Удаление трех элементов
         arr.display();
 
-//Z_6_1 Тестирование - поиск максимального элемента ======
+// Тестирование - поиск максимального элемента ======
        System.out.println("Максимальное значениe: " + arr.getMax());
-// ==== Массив пуст =========================================
         arr = new HighArray(0); // Создание пустого массива
         System.out.println("Максимальное значениe: " + arr.getMax());
 
@@ -32,12 +32,12 @@ class HighArrayApp {
         arr2.insert(88); arr2.insert(11); arr2.insert(0);  arr2.insert(66);
         arr2.insert(33);
 
-//Z_6_2 Тестирование - Удаление максимального значения -------------------------
+//Тестирование - Удаление максимального значения -------------------------
             arr2.removeMax();
             System.out.println("максимальное значениe удалено:  " + arr2.getMax());
             arr2.display();
 
-//Z_6_3 Тестирование - Сортировка  -------------------------
+//Тестирование - Сортировка  -------------------------
         HighArray res = new HighArray(10);
         for(int k=0; k<10; k++) {
             long tmp = arr2.getMax();
@@ -48,7 +48,16 @@ class HighArrayApp {
                 res.insert(tmp);
         }
         res.display();
-
+// ----- Тестирование  noDups -----------------------------
+        System.out.println("Тестирование noDups ");
+        arr2 = new HighArray(maxSize); // Создание массива
+        arr2.insert(99);	// Вставка 10 элементов
+        arr2.insert(99); arr2.insert(44); arr2.insert(44); arr2.insert(22);
+        arr2.insert(88); arr2.insert(44); arr2.insert(22);  arr2.insert(22);
+        arr2.insert(88);
+        arr2.display();
+        arr2.noDups();
+        arr2.display();
 
 
 
