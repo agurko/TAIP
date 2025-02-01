@@ -1,4 +1,4 @@
-package DataArrayApp;
+package January.DataArrayApp;
 
 class DataArray {
     private Percon[]a;

@@ -1,4 +1,4 @@
-package DataArrayApp;
+package January.DataArrayApp;
 
 class Percon {
     private String lastName; private String firstName; private int age;

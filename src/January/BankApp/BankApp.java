@@ -1,4 +1,4 @@
-package BankApp;
+package January.BankApp;
 
 class BankApp {
     public static void main(String[] args) {
@@ -10,4 +10,4 @@ class BankApp {
         System.out.print("After transactions,");
         ba1.display(); // Вывод баланса
     } // Конец main()
-} // Конец класса BankApp
+} // Конец класса January.HighArray.BankApp

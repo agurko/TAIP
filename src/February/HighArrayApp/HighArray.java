@@ -1,4 +1,4 @@
-package February.Z6_1_3;
+package February.HighArrayApp;
 
 class HighArray {
     private final long[] a;	// Ссылка на массив a

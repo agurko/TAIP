@@ -1,4 +1,4 @@
-package BankApp;
+package January.BankApp;
 
 class BankAccount {
     private double balance; // Баланс счета

@@ -1,4 +1,4 @@
-package February.Z6_1_3;
+package February.HighArrayApp;
 
 class HighArrayApp {
     public static void main(String[] args) {
