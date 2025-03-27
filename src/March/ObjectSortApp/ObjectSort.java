@@ -28,18 +28,7 @@ class ArrayInOb {
 
     //---- insertionSort ----------
     public void insertionSort() {
-        int in, out;
-// out разделительный маркер
-        for (out = 1; out < nElems; out++) {
-            Person temp = a[out];    // Скопировать помеченный элемент
-            in = out;    // Начать перемещения с out
-// Пока не найден меньший элемент
-            while (in > 0 && a[in - 1].getLast().compareTo(temp.getLast()) > 0) {
-                a[in] = a[in - 1];    // Сдвинуть элемент вправо
-                --in;    // Перейти на одну позицию влево
-            }
-            a[in] = temp;    // Вставить помеченный элемент
-        }
+
     }
 } // Конец класса ArrayInOb
 

@@ -25,22 +25,12 @@ class ArraySelect {
 
     //---- selectionSort -----
     public void selectionSort() {
-        int out, in, min;
-        for (out = 0; out < nElems - 1; out++)    // Внешний цикл
-        {
-            min = out;    // Минимум
-            for (in = out + 1; in < nElems; in++) // Внутренний цикл
-                if (a[in] < a[min])    // Если значение min больше,
-                    min = in;    // значит, найден новый минимум
-            swap(out, min);    // swap
-        }
+
     }
 
     //------ swap -----------------------------
     private void swap(int one, int two) {
-        long temp = a[one];
-        a[one] = a[two];
-        a[two] = temp;
+       
     }
 } //--------------------------------------------------------------
 

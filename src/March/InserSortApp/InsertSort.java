@@ -25,18 +25,7 @@ class ArrayIns {
 
     //--------- insertionSort -------------------------
     public void insertionSort() {
-        int in, out;
-        // out разделительный маркер
-        for (out = 1; out < nElems; out++) {
-            long temp = a[out];    // Скопировать помеченный элемент
-            in = out;    // Начать перемещения с out
-            while (in > 0 && a[in - 1] >= temp) // Пока не найден меньший элемент
-            {
-                a[in] = a[in - 1];    // Сдвинуть элемент вправо
-                --in;    // Перейти на одну позицию влево
-            }
-            a[in] = temp;    // Вставить помеченный элемент
-        }
+
     }
 }  // Конец класса ArrayIns
 
